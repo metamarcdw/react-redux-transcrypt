@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/__javascript__/bundle.js",
   "scripts": {
-    "start": "npx concurrently --kill-others \"npx nodemon -e py --watch src --exec \"bash compile.sh\"\" \"npx webpack-dev-server\"",
+    "start": "npx concurrently --kill-others \"npx nodemon -e py --watch src --exec \"make compile\"\" \"npx webpack-dev-server\"",
     "win": "npx concurrently --kill-others \"npx nodemon -e py --watch src --exec \"compile\"\" \"npx webpack-dev-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^3.5.1",
     "nodemon": "^1.17.2",
