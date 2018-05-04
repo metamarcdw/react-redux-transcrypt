@@ -8,9 +8,7 @@ createStore, combineReducers, applyMiddleware = \
              "createStore", "combineReducers", "applyMiddleware")
 
 logger = require("redux-logger").createLogger
-__pragma__("noalias", "default")
-promise = require("redux-promise-middleware").default
-__pragma__("alias", "default", "py_default")
+promise = require("redux-promise-middleware").js_default
 
 users_store = createStore(
     combineReducers({
